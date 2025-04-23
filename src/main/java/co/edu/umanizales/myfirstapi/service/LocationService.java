@@ -33,6 +33,7 @@ public class LocationService {
 
     @PostConstruct
     public void readLocationsFromCSV() throws IOException, URISyntaxException {
+
         locations = new ArrayList<>();
         states = new ArrayList<>();
 
@@ -67,7 +68,7 @@ public class LocationService {
     public Location getLocationByCode(String code) {
         for (Location location : locations) {
             if (location.getCode().equals(code)) {
-                return location;
+                return location ;
             }
         }
         return null;

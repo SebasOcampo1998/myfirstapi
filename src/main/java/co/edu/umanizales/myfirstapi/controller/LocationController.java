@@ -42,7 +42,7 @@ public class LocationController {
     }
 
     @GetMapping(path="/by_state_code/{code}")
-    public List<Location> getLocationByInitialLetter(@PathVariable String code) {
+    public List<Location> getLocationsByStateCode(@PathVariable String code) {
         return locationService.getLocationsByStateCode(code);
     }
 
