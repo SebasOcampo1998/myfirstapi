@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>myfirstapi</name>
 	<description>myfirstapi</description>
+
 	<url/>
 	<licenses>
 		<license/>
@@ -40,12 +41,22 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- 📦 OpenCSV -->
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.7.1</version>
+		</dependency>
 	</dependencies>
+
+		<!-- Puedes agregar más dependencias aquí si las necesitas en el futuro -->
 
 	<build>
 		<plugins>

@@ -2,7 +2,6 @@ package co.edu.umanizales.myfirstapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
@@ -14,6 +13,6 @@ public class Seller {
     private String lastName;
     private char gender;
     private byte age;
-    private Location city;
+    private String city;
 
 }
