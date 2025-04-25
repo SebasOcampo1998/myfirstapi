@@ -55,4 +55,8 @@ public class LocationController {
     public State getStateByCode(@PathVariable String code) {
         return locationService.getStateByCode(code);
     }
+    @GetMapping(path = "/by_min_length/{minLength}")
+    public List<Location> getLocationsByMinLength(@PathVariable int minLength) {
+        return locationService.getLocationsByMinLength(minLength);
+    }
 }

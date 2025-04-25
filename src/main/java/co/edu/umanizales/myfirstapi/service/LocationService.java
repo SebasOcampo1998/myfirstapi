@@ -24,6 +24,7 @@ import com.opencsv.exceptions.CsvValidationException;
 @Getter
 public class LocationService {
 
+
     @Getter
     private List<Location> locations;
     private List<State> states;
@@ -121,5 +122,16 @@ public class LocationService {
         return null;
     }
 
+    public List<Location> getLocationsByMinLength(int minLength) {
+        List<Location> filteredLocations = new ArrayList<>();
+
+        for (Location location : locations) {
+            if (location.getDescription() != null && location.getDescription().length() >= minLength) {
+                filteredLocations.add(location);
+            }
+        }
+
+        return filteredLocations;
+    }
 
 }
