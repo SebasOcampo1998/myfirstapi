@@ -7,11 +7,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Store {
-    private String code;
-    private String name;
-    private String address;
-    private String location;
-    private String description;
 
+public abstract class Parameter {
+    private String code;
+    private String description;
 }

@@ -12,7 +12,7 @@ public class StoreController {
 
     @GetMapping
     public String getStore() {
-        Store store = new Store ("134","LaExtrella","Calle 21 45 - 43","Manizales","3109875674","Laextrella@gmail.com");
+        Store store = new Store ("134","LaExtrella","Calle 21 45 - 43","Manizales","3109875674");
 
 
                 return "Las tiendas";

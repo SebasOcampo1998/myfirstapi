@@ -4,13 +4,19 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+import java.util.List;
+
 @Getter
 @Setter
 @AllArgsConstructor
 public class Sale {
-    private String product;
+    private LocalDate dateSale;
+    private Store store;
+    private Seller seller;
     private int quantity;
-    private double price;
-    private String date;
+    private List<Product> products;
+    private String code;
+
 
 }
